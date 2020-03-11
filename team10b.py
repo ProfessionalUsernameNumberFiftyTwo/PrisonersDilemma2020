@@ -17,7 +17,7 @@ def move(my_history, their_history, my_score, their_score):
         return 'b'
       else:
         return 'c'
-    if their_history.count('b') <= 5 and len(my_history) >= 1:
+    if their_history.count('b') <= 4 and len(my_history) >= 1:
       return their_history[-1]
     elif random.random() < 0.02:
       return 'c'
